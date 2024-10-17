@@ -19,11 +19,26 @@ const mockTransactions: Transaction[] = [
     description: "Macy's",
     amount: 5200,
   },
+  {
+    id: "004",
+    date: new Date("2024-01-04"),
+    description: "GameStop",
+    amount: 500,
+  },
 ];
 
-// method to fetch trx
+/**
+ * Simulates fetching transactions from a data source.
+ * Returns a promise that resolves with mock transaction data after a delay.
+ * 
+ * @returns {Promise<Transaction[]>} A promise that resolves to an array of transactions.
+ */
 export const fetchTransactions = async (): Promise<Transaction[]> => {
-  return new Promise((resolveInner) => {
-    setTimeout(resolveInner(mockTransactions), 1000);
+  return new Promise((resolveInner, reject) => {
+    try {
+      setTimeout(() => resolveInner(mockTransactions), 1000);
+    } catch (error) {
+      reject(error);
+    }
   });
 };
