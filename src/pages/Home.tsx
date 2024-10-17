@@ -5,6 +5,7 @@ import { fetchTransactions } from '../api/transactions';
 import { Transaction } from '../types/Transaction';
 import { TransactionList } from '../components/TransactionsList';
 import { Header } from '../components/Header';
+import { Filter } from '../components/Filter';
 
 const Home: React.FC = () => {
   const today = new Date();
@@ -47,9 +48,10 @@ const Home: React.FC = () => {
   };
 
   return (
-    <Container>
+    <Container disableGutters maxWidth={false} style={{ margin: 0 }}>
       {error && <Typography color="error">{error}</Typography>}
-      <Header
+      <Header />
+      <Filter 
         startDate={startDate}
         endDate={endDate}
         onStartDateChange={setStartDate}

@@ -5,7 +5,7 @@ export interface Transaction {
   amount: number;
 }
 
-export interface HeaderProps {
+export interface FilterProps {
   startDate: string;
   endDate: string;
   onStartDateChange: (date: string) => void;
