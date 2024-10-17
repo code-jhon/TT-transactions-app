@@ -25,6 +25,42 @@ const mockTransactions: Transaction[] = [
     description: "GameStop",
     amount: 500,
   },
+  {
+    id: "005",
+    date: new Date("2024-01-05"),
+    description: "Amazon",
+    amount: 2500,
+  },
+  {
+    id: "006",
+    date: new Date("2024-01-06"),
+    description: "blizzard",
+    amount: 300,
+  },
+  {
+    id: "007",
+    date: new Date("2024-05-07"),
+    description: "puma",
+    amount: 1200,
+  },
+  {
+    id: "008",
+    date: new Date("2024-01-08"),
+    description: "Walmart",
+    amount: 700,
+  },
+  {
+    id: "009",
+    date: new Date("2024-10-09"),
+    description: "chanel",
+    amount: 900,
+  },
+  {
+    id: "010",
+    date: new Date("2024-01-10"),
+    description: "Bestbuy",
+    amount: 1000,
+  },
 ];
 
 /**

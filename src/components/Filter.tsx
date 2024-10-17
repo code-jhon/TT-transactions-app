@@ -11,7 +11,7 @@ export const Filter: React.FC<FilterProps> = ({
   onClearFilter,
  }) => {
   return (
-    <Box display="flex" alignItems="center" gap={2} mb={2} mt={3}>
+    <Box display="flex" alignItems="center" justifyContent={"flex-end"} gap={2} mb={2} mt={3} mr={3}>
       <TextField
         label="Start Date"
         type="date"
