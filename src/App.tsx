@@ -1,27 +1,9 @@
-import { useState, useEffect } from "react";
-import { fetchTransactions } from "./api/transactions";
-import { Transaction } from "./types/Transaction";
-import { TransactionList } from "./components/TransactionsList";
+// src/App.tsx
+import React from 'react';
+import Home from './pages/Home';
 
-export default function App() {
-  const [transactions, setTransactions] = useState<Transaction[]>([]);
+const App: React.FC = () => {
+  return <Home />;
+};
 
-  useEffect(() => {
-    const loadTransactions = async () => {
-      try {
-        const data = await fetchTransactions();
-        setTransactions(data);
-      } catch (error) {
-        alert(`Error: ${error}`);
-      }
-    };
-    loadTransactions();
-  }, []);
-
-  return (
-    <div className="App">
-      <h1>Transactions</h1>
-      <TransactionList transactions={transactions} />
-    </div>
-  );
-}
+export default App;
