@@ -1,4 +1,4 @@
-import { Transaction } from "../types/Transaction";
+import type { Transaction } from "../types/Transaction";
 
 const mockTransactions: Transaction[] = [
   {
