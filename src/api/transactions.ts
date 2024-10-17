@@ -10,13 +10,13 @@ const mockTransactions: Transaction[] = [
   {
     id: "002",
     date: new Date("2024-01-02"),
-    description: "Ross",
+    description: "Underarmour",
     amount: 1500,
   },
   {
     id: "003",
     date: new Date("2024-01-03"),
-    description: "Macy's",
+    description: "nautica",
     amount: 5200,
   },
   {

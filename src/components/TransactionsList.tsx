@@ -19,6 +19,7 @@ export const TransactionList: React.FC<TransactionProps> = ({ transactions }) =>
                   <Typography variant="body2">Transaction id: {transaction.id}</Typography>
                   <Typography variant="body2">{transaction.description}</Typography>
                   <Typography variant="body1"><strong>USD ${transaction.amount}</strong></Typography>
+                  <img src={`https://cdn.brandfetch.io/${transaction.description}.com/w/512/h/121/logo`} alt={`${transaction.description} Logo`} style={{ width: '120px', height: 'auto', marginTop: '8px' }} />
                 </Box>
               </CardContent>
             </Card>
